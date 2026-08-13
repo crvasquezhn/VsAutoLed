@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS AUTO LED | Potencia e Iluminación Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- CONTROLES ESTADO CARRITO (HTML/CSS Pure States) -->
+    <input type="checkbox" id="cart-toggle" class="modal-toggle">
+    <input type="checkbox" id="add-p1" class="cart-item-toggle">
+    <input type="checkbox" id="add-p2" class="cart-item-toggle">
+    <input type="checkbox" id="add-p3" class="cart-item-toggle">
+    <input type="checkbox" id="add-p4" class="cart-item-toggle">
+
+    <!-- Encabezado / Navegación -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="brand-highlight">VS</span> AUTO LED
+        </div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#beneficios">¿Por qué elegirnos?</a>
+            <a href="#contacto" class="btn-nav">Contacto</a>
+            <!-- Botón de Carrito -->
+            <label for="cart-toggle" class="cart-trigger" aria-label="Ver carrito de compras">
+                🛒 <span class="cart-badge-count"></span>
+            </label>
+        </nav>
+    </header>
+
+    <!-- Sección Hero / Portada -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="badge">Tecnología de Iluminación Pro</span>
+            <h1>ILUMINA EL CAMINO. <br><span class="glow-text">DOMINA LA CARRETERA.</span></h1>
+            <p>Elevamos la estética y visibilidad de tu vehículo con luces LED de alta potencia, lupas proyectores y los mejores accesorios automotrices.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/50487750032?text=Hola,%20quiero%20cotizar%20luces%20LED%20para%20mi%20vehículo" target="_blank" class="btn btn-primary">Cotizar por WhatsApp</a>
+                <a href="#productos" class="btn btn-secondary">Ver Catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas / Beneficios -->
+    <section id="beneficios" class="features">
+        <div class="feature-card">
+            <div class="icon">⚡</div>
+            <h3>Ultra Brillo HD</h3>
+            <p>Kits LED de última generación con mayor alcance y consumo eficiente.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🛠️</div>
+            <h3>Garantía & Calidad</h3>
+            <p>Productos probados contra agua, polvo y temperaturas extremas.</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🚀</div>
+            <h3>Envíos Rápidos</h3>
+            <p>Atención inmediata y despachos directos a donde lo necesites.</p>
+        </div>
+    </section>
+
+    <!-- Catálogo de Productos -->
+    <section id="productos" class="catalog">
+        <h2 class="section-title">NUESTROS <span>PRODUCTOS</span></h2>
+        <p class="section-subtitle">Haz clic en cualquier producto para expandir detalles y fotografías</p>
+        
+        <div class="product-grid">
+
+            <!-- ================= PRODUCTO 1 ================= -->
+            <input type="checkbox" id="modal-p1" class="modal-toggle">
+            <div class="product-card">
+                <div class="card-tag">Bestseller</div>
+                <div class="product-img-placeholder led-headlights"></div>
+                <h3>Kits LED Headlight Pro</h3>
+                <p>Hasta 20,000 lúmenes, corte de luz perfecto sin encandilar.</p>
+                <span class="price">L 1,450.00</span>
+                <label for="modal-p1" class="btn-card">Ver Detalles</label>
+            </div>
+
+            <!-- MODAL FLOTANTE PRODUCTO 1 -->
+            <div class="modal-overlay">
+                <div class="modal-box">
+                    <label for="modal-p1" class="modal-close">&times;</label>
+                    <div class="modal-body">
+                        <div class="modal-gallery">
+                            <div class="gallery-main led-headlights"></div>
+                            <div class="gallery-thumbs">
+                                <div class="thumb led-headlights"></div>
+                                <div class="thumb ambient-light"></div>
+                                <div class="thumb bar-lights"></div>
+                            </div>
+                        </div>
+                        <div class="modal-info">
+                            <span class="badge">Categoría: Iluminación Principal</span>
+                            <h2>Kits LED Headlight Pro Premium</h2>
+                            <p class="modal-price">L 1,450.00 <span class="stock-tag">En Stock</span></p>
+                            <div class="modal-description">
+                                <p>Revoluciona la visibilidad nocturna de tu auto con tecnología Chip CSP de grado automotriz. Ofrece una línea de corte uniforme que no encandila al tráfico opuesto, disipador térmico de aviación y cuerpo sellado IP68.</p>
+                                <ul>
+                                    <li>✔ Potencia: 20,000 Lúmenes reales por par.</li>
+                                    <li>✔ Color de Luz: 6,500K Blanco Frío HD.</li>
+                                    <li>✔ Sistema Canbus anti-error en tablero.</li>
+                                    <li>✔ Instalación Plug & Play.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-actions">
+                                <a href="https://wa.me/50487750032?text=Hola,%20quiero%20comprar%20el%20Kit%20LED%20Headlight%20Pro" target="_blank" class="btn btn-whatsapp-modal">
+                                    Consultar por WhatsApp
+                                </a>
+                                <!-- BOTÓN DE AGREGAR AL CARRITO (SOLO AGREGA AL HACER CLIC AQUÍ) -->
+                                <label for="add-p1" class="btn btn-cart-modal">
+                                    <span class="add-txt">🛒 Agregar al Carrito</span>
+                                    <span class="added-txt">✔ Agregado al Carrito</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= PRODUCTO 2 ================= -->
+            <input type="checkbox" id="modal-p2" class="modal-toggle">
+            <div class="product-card">
+                <div class="product-img-placeholder bar-lights"></div>
+                <h3>Barras & Exploradoras LED</h3>
+                <p>Potencia bruta todoterreno con protección IP68 e instalación limpia.</p>
+                <span class="price">L 2,100.00</span>
+                <label for="modal-p2" class="btn-card">Ver Detalles</label>
+            </div>
+
+            <!-- MODAL FLOTANTE PRODUCTO 2 -->
+            <div class="modal-overlay">
+                <div class="modal-box">
+                    <label for="modal-p2" class="modal-close">&times;</label>
+                    <div class="modal-body">
+                        <div class="modal-gallery">
+                            <div class="gallery-main bar-lights"></div>
+                            <div class="gallery-thumbs">
+                                <div class="thumb bar-lights"></div>
+                                <div class="thumb led-headlights"></div>
+                                <div class="thumb audio-acc"></div>
+                            </div>
+                        </div>
+                        <div class="modal-info">
+                            <span class="badge">Categoría: Off-Road & Trabajo</span>
+                            <h2>Barra LED Curvada 32" Tri-Row</h2>
+                            <p class="modal-price">L 2,100.00 <span class="stock-tag">En Stock</span></p>
+                            <div class="modal-description">
+                                <p>Diseñada para resistir condiciones severas en rutas difíciles. Combina patrón de inundación y profundidad para máxima claridad en la carretera o senderos.</p>
+                                <ul>
+                                    <li>✔ Carcasa de aluminio aeroespacial.</li>
+                                    <li>✔ Lentes de policarbonato de alta resistencia.</li>
+                                    <li>✔ Incluye bases ajustables y arnés de cableado.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-actions">
+                                <a href="https://wa.me/50487750032?text=Hola,%20quiero%20consultar%20por%20la%20Barra%20LED%20Off-Road" target="_blank" class="btn btn-whatsapp-modal">
+                                    Consultar por WhatsApp
+                                </a>
+                                <label for="add-p2" class="btn btn-cart-modal">
+                                    <span class="add-txt">🛒 Agregar al Carrito</span>
+                                    <span class="added-txt">✔ Agregado al Carrito</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= PRODUCTO 3 ================= -->
+            <input type="checkbox" id="modal-p3" class="modal-toggle">
+            <div class="product-card">
+                <div class="product-img-placeholder ambient-light"></div>
+                <h3>Iluminación RGB Ambiente</h3>
+                <p>Tiras LED de fibra óptica controlables con múltiples modos de color.</p>
+                <span class="price">L 1,200.00</span>
+                <label for="modal-p3" class="btn-card">Ver Detalles</label>
+            </div>
+
+            <!-- MODAL FLOTANTE PRODUCTO 3 -->
+            <div class="modal-overlay">
+                <div class="modal-box">
+                    <label for="modal-p3" class="modal-close">&times;</label>
+                    <div class="modal-body">
+                        <div class="modal-gallery">
+                            <div class="gallery-main ambient-light"></div>
+                            <div class="gallery-thumbs">
+                                <div class="thumb ambient-light"></div>
+                                <div class="thumb led-headlights"></div>
+                            </div>
+                        </div>
+                        <div class="modal-info">
+                            <span class="badge">Categoría: Personalización Interior</span>
+                            <h2>Kit Luces de Ambiente Neón RGB</h2>
+                            <p class="modal-price">L 1,200.00 <span class="stock-tag">En Stock</span></p>
+                            <div class="modal-description">
+                                <p>Transforma el habitáculo de tu auto al nivel de un vehículo de lujo. Controlable por App de celular o control remoto con sincronización al ritmo de la música.</p>
+                                <ul>
+                                    <li>✔ 16 Millones de colores personalizables.</li>
+                                    <li>✔ Fibra óptica acrílica de corte flexible.</li>
+                                    <li>✔ Conexión segura a fusibles de 12V.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-actions">
+                                <a href="https://wa.me/50487750032?text=Hola,%20me%20interesa%20el%20Kit%20de%20Ambiente%20RGB" target="_blank" class="btn btn-whatsapp-modal">
+                                    Consultar por WhatsApp
+                                </a>
+                                <label for="add-p3" class="btn btn-cart-modal">
+                                    <span class="add-txt">🛒 Agregar al Carrito</span>
+                                    <span class="added-txt">✔ Agregado al Carrito</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================= PRODUCTO 4 ================= -->
+            <input type="checkbox" id="modal-p4" class="modal-toggle">
+            <div class="product-card">
+                <div class="product-img-placeholder audio-acc"></div>
+                <h3>Audio & Accesorios</h3>
+                <p>Equipos de sonido, cámaras de retroceso y accesorios de lujo.</p>
+                <span class="price">L 3,500.00</span>
+                <label for="modal-p4" class="btn-card">Ver Detalles</label>
+            </div>
+
+            <!-- MODAL FLOTANTE PRODUCTO 4 -->
+            <div class="modal-overlay">
+                <div class="modal-box">
+                    <label for="modal-p4" class="modal-close">&times;</label>
+                    <div class="modal-body">
+                        <div class="modal-gallery">
+                            <div class="gallery-main audio-acc"></div>
+                            <div class="gallery-thumbs">
+                                <div class="thumb audio-acc"></div>
+                                <div class="thumb ambient-light"></div>
+                            </div>
+                        </div>
+                        <div class="modal-info">
+                            <span class="badge">Categoría: Car Audio & Video</span>
+                            <h2>Pantalla Android Auto / CarPlay + Cámara</h2>
+                            <p class="modal-price">L 3,500.00 <span class="stock-tag">En Stock</span></p>
+                            <div class="modal-description">
+                                <p>Actualiza la tecnología de tu vehículo con una pantalla táctil IPS de alta resolución. Compatible con Apple CarPlay y Android Auto inalámbrico.</p>
+                                <ul>
+                                    <li>✔ Incluye cámara de retroceso gran angular HD.</li>
+                                    <li>✔ Bluetooth 5.0, Wi-Fi y módulo GPS integrado.</li>
+                                    <li>✔ Salidas RCA de alta potencia para amplificadores.</li>
+                                </ul>
+                            </div>
+                            <div class="modal-actions">
+                                <a href="https://wa.me/50487750032?text=Hola,%20deseo%20información%20sobre%20el%20Kit%20de%20Pantalla%20Android" target="_blank" class="btn btn-whatsapp-modal">
+                                    Consultar por WhatsApp
+                                </a>
+                                <label for="add-p4" class="btn btn-cart-modal">
+                                    <span class="add-txt">🛒 Agregar al Carrito</span>
+                                    <span class="added-txt">✔ Agregado al Carrito</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- VENTANA LATERAL DE CARRITO DE COMPRAS -->
+    <div class="cart-sidebar-overlay">
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h3>🛒 Tu Carrito de Compras</h3>
+                <label for="cart-toggle" class="cart-close">&times;</label>
+            </div>
+            
+            <!-- MENSAJE CARRITO VACÍO -->
+            <div class="cart-empty-msg">
+                <p>Tu carrito está vacío.</p>
+                <small>Selecciona un producto en la tienda y haz clic en "Agregar al Carrito".</small>
+            </div>
+
+            <!-- CONTENEDOR DEDICADO A ITEMS DINÁMICOS -->
+            <div class="cart-items">
+                
+                <!-- ITEM 1 EN CARRITO -->
+                <div class="cart-item item-p1">
+                    <div class="cart-item-img led-headlights"></div>
+                    <div class="cart-item-details">
+                        <h4>Kit LED Headlight Pro</h4>
+                        <span class="cart-item-price">L 1,450.00</span>
+                    </div>
+                    <!-- BOTÓN ELIMINAR ITEM 1 -->
+                    <label for="add-p1" class="btn-remove-item" title="Eliminar producto">&times;</label>
+                </div>
+
+                <!-- ITEM 2 EN CARRITO -->
+                <div class="cart-item item-p2">
+                    <div class="cart-item-img bar-lights"></div>
+                    <div class="cart-item-details">
+                        <h4>Barra LED Curvada 32"</h4>
+                        <span class="cart-item-price">L 2,100.00</span>
+                    </div>
+                    <!-- BOTÓN ELIMINAR ITEM 2 -->
+                    <label for="add-p2" class="btn-remove-item" title="Eliminar producto">&times;</label>
+                </div>
+
+                <!-- ITEM 3 EN CARRITO -->
+                <div class="cart-item item-p3">
+                    <div class="cart-item-img ambient-light"></div>
+                    <div class="cart-item-details">
+                        <h4>Kit Luces RGB Neón</h4>
+                        <span class="cart-item-price">L 1,200.00</span>
+                    </div>
+                    <!-- BOTÓN ELIMINAR ITEM 3 -->
+                    <label for="add-p3" class="btn-remove-item" title="Eliminar producto">&times;</label>
+                </div>
+
+                <!-- ITEM 4 EN CARRITO -->
+                <div class="cart-item item-p4">
+                    <div class="cart-item-img audio-acc"></div>
+                    <div class="cart-item-details">
+                        <h4>Pantalla Android Auto</h4>
+                        <span class="cart-item-price">L 3,500.00</span>
+                    </div>
+                    <!-- BOTÓN ELIMINAR ITEM 4 -->
+                    <label for="add-p4" class="btn-remove-item" title="Eliminar producto">&times;</label>
+                </div>
+
+            </div>
+
+            <div class="cart-footer">
+                <p class="cart-note">Haz clic en el botón de abajo para cotizar tus artículos directamente con un asesor por WhatsApp:</p>
+                <a href="https://wa.me/50487750032?text=Hola,%20quisiera%20cotizar%20los%20productos%20que%20tengo%20seleccionados%20en%20el%20carrito%20de%20compras" target="_blank" class="btn btn-whatsapp-final">
+                    Enviar Pedido por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/50487750032?text=Hola,%20vengo%20del%20sitio%20web%20y%20deseo%20información" class="whatsapp-float" target="_blank" aria-label="Contacto por WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.135-2.135c2.372 1.3 5.060 1.987 7.865 1.987 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.35c-2.43 0-4.808-0.651-6.892-1.888l-0.494-0.293-5.127 1.345 1.368-5.002-0.322-0.513c-1.353-2.155-2.068-4.646-2.068-7.199 0-7.518 6.118-13.636 13.636-13.636s13.636 6.118 13.636 13.636c0 7.518-6.118 13.636-13.636 13.636zM22.502 19.333c-0.356-0.178-2.106-1.039-2.433-1.158s-0.564-0.178-0.801 0.178c-0.238 0.356-0.92 1.158-1.128 1.396s-0.415 0.267-0.771 0.089c-0.356-0.178-1.503-0.554-2.863-1.767-1.059-0.944-1.774-2.11-1.982-2.466s-0.022-0.548 0.156-0.725c0.161-0.16 0.356-0.415 0.534-0.623s0.238-0.356 0.356-0.594c0.119-0.238 0.059-0.445-0.030-0.623s-0.801-1.93-1.098-2.643c-0.288-0.694-0.582-0.6-0.801-0.612-0.207-0.011-0.445-0.011-0.683-0.011s-0.623 0.089-0.95 0.445c-0.327 0.356-1.247 1.218-1.247 2.97 0 1.752 1.277 3.444 1.455 3.682s2.514 3.839 6.091 5.383c0.851 0.367 1.515 0.587 2.033 0.751 0.855 0.271 1.634 0.233 2.25 0.141 0.687-0.103 2.106-0.861 2.403-1.692s0.297-1.543 0.208-1.692c-0.089-0.148-0.327-0.238-0.683-0.415z"></path>
+        </svg>
+        <span>Escríbenos</span>
+    </a>
+
+    <!-- Pie de página -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <p class="brand-footer">VS AUTO LED</p>
+            <blockquote class="motivational-phrase">
+                "La pasión no se detiene cuando cae la noche; se enciende con más fuerza para iluminar cada kilómetro de tu camino."
+            </blockquote>
+            <p class="contact-info">Contacto Directo: <strong>+504 8775-0032</strong></p>
+            <p class="copyright">&copy; 2026 VS Auto LED. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
